@@ -2,10 +2,8 @@
 
 require 'functions.php'; // Sertakan file functions.php
 
-// Ambil parameter action dari URL
 $action = isset($_GET['action']) ? $_GET['action'] : '';
 
-// Panggil fungsi sesuai dengan parameter action
 switch ($action) {
     case 'admin':
         admin();
