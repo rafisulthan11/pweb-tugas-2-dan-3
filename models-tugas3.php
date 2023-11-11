@@ -3,7 +3,6 @@ require_once('config/conn.php');
 
 class Students {    
 
-//batas-------------------------- 1
     static function selectById($id) {
         global $conn;
 
@@ -22,7 +21,6 @@ class Students {
         return $result;
     } 
     
-//batas-------------------------- 2 
     static function selectWhere($clause) {
   
         global $conn;
@@ -38,7 +36,6 @@ class Students {
         return $result;
     } 
     
-//batas-------------------------- 3 
     static function updateById($id, $name, $email, $role_fk) {
       
         global $conn; 
@@ -60,7 +57,6 @@ class Students {
         return $result;          
     }  
     
-//batas-------------------------- 4
     // Pembaruan dengan klausa WHERE
     static function updateWhere($clause, $name, $email, $role_fk) {
         global $conn;
@@ -79,7 +75,6 @@ class Students {
     
     } 
     
-//batas-------------------------- 5  
     // Penghapusan berdasarkan ID
     static function deleteById($id) {
         global $conn;
@@ -100,8 +95,7 @@ class Students {
         }
 
     } 
-    
-//batas-------------------------- 6  
+      
     // Penghapusan dengan klausa WHERE
     static function deleteWhere($clause) {  
         global $conn;  
